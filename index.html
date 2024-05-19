@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trainings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container">
+        <div class="header__top">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">HOME</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">GOALS</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">MY CYCLING</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">STATISTICS</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">SCHEDULE</a></li>
+            </ul>
+          </nav>
+          <div class="login">
+              <button class="login__btn">
+                login
+              </button>          
+          </div>
+        </div>
+
+        <div class="header__content">
+            <h1 class="header__title">
+              <span>trainings</span>
+              planner 
+            </h1>
+            <div class="header__text">
+              <p>Keep track of your goals</p>
+              <p>Keep track of your progress</p>
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <section class="slider-top">
+    <div class="slider">
+      <div class="slider__item" style="background-image: url(images/bycicle-beach.jpg);"></div>
+      <div class="slider__item" style="background-image: url(images/cycling3.jpg);"></div>
+    </div>
+  </section>
+
+  <main class="main">
+    <section class="my-trainings">
+      <div class="container">
+        <h2 class="title">My recent trainings</h2>
+        <ul class="my-trainings__list">
+          <li class="my-trainings__item">
+            <img class="my-trainings__item-img" src="images/cycling4.JPG" alt="" style="height: 180px;">
+            <div class="my-trainings__item-content">
+              <h3 class="my-trainings__item-title">Long cycling around Flensburg</h3>
+              <p class="my-trainings__item-date">12.03.2024</p>
+              <a href="" class="my-trainings__item-link">Read</a>
+            </div>
+          </li>
+
+          <li class="my-trainings__item">
+            <img class="my-trainings__item-img" src="images/cycling7.JPG" alt="">
+            <div class="my-trainings__item-content">
+              <h3 class="my-trainings__item-title">Cycling to Bremen</h3>
+              <p class="my-trainings__item-date">14.04.2024</p>
+              <a href="" class="my-trainings__item-link">Read</a>
+            </div>
+          </li>
+
+          <li class="my-trainings__item">
+            <img class="my-trainings__item-img" src="images/cycling7.JPG" alt="">
+            <div class="my-trainings__item-content">
+              <h3 class="my-trainings__item-title">Hamburg cycling around Barenfeld + Othmarschen</h3>
+              <p class="my-trainings__item-date">15.03.2024</p>
+              <a href="" class="my-trainings__item-link">Read</a>
+            </div>
+          </li>
+
+          <li class="my-trainings__item">
+            <img class="my-trainings__item-img" src="images/cycling8.JPG" alt="">
+            <div class="my-trainings__item-content">
+              <h3 class="my-trainings__item-title">Elb cycling</h3>
+              <p class="my-trainings__item-date">04.04.2024</p>
+              <a href="" class="my-trainings__item-link">Read</a>
+            </div>
+          </li>
+        </ul>
+        <a href="" class="my-trainings__link">View all</a>
+      </div>
+    </section>
+
+    <section class="my-goals">
+      <div class="container">
+        <div class="my-goals__content">
+          <div class="my-goals__content-main">
+            <h2 class="my-goals__title">
+              Weekly goals
+            </h2>
+            <a href="" class="my-goals__link">View all</a>
+          </div>
+          
+          <div class="my-goals__table-block">
+            <table class="my-goals__table">
+              <tr class="my-goals__table-tr">
+                <td class="my-goals__table-td">100</td>
+                <td class="my-goals__table-td blue">100</td>
+              </tr>
+              <tr class="my-goals__table-tr">
+                <td class="my-goals__table-td">200</td>
+                <td class="my-goals__table-td blue">200</td>
+              </tr>
+              <tr class="my-goals__table-tr">
+                <td class="my-goals__table-td">300</td>
+                <td class="my-goals__table-td blue">300</td>
+              </tr>
+              <tr class="my-goals__table-tr">
+                <td class="my-goals__table-td">400</td>
+                <td class="my-goals__table-td blue">400</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

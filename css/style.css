@@ -1,0 +1,312 @@
+ *,
+ *::after,
+ *::before {
+    box-sizing: border-box;
+ }
+
+ body {
+   color: #fff;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+ }
+
+ a {
+   color: inherit;
+   text-decoration: none;
+}
+
+button {
+   border: none;
+   text-decoration: none;
+   background-color: transparent;
+   cursor: pointer;
+   color: inherit;
+}
+
+ .container {
+   max-width: 1220px;
+   padding: 0 10px;
+   margin: 0 auto;
+ }
+
+ .header {
+    min-height: 100vh;
+    position: absolute;
+    background: rgb(0, 0, 0, 0.3);
+    min-height: 100vh;
+    z-index: 3;
+    left: 0; /*to stretch*/
+    right: 0;
+ }
+
+ .header__top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 75px 0 30px;
+   margin-bottom: 155px;
+   
+}
+
+.nav__list {
+   display: flex;
+}
+
+.nav__item {
+   margin-right: 30px;
+}
+
+.nav__link {
+   text-transform: uppercase;
+   font-size: 18px;
+   line-height: 21px;
+   transition: color .5s;
+}
+
+.nav__link:hover {
+   color: #CB0E0E;
+}
+
+.login {
+   margin-left: 22px;
+   margin-right: 124px;
+}
+
+.login__btn {
+      width: 60px;
+      height: 30px;
+      border: 1px solid #fff;
+      background: rgb(0, 0, 0, 0.1);
+      cursor: pointer;
+      font-size: 1rem;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+      transition: color .5s;
+}
+
+.login__btn:hover {
+   background-color: #CB0E0E;
+   color: #fff;
+}
+
+.header__content {
+   max-width: 600px;
+   
+}
+
+.header__title {
+   font-size: 110px;
+   line-height: 70px;
+   font-weight: 400;
+   margin-bottom: 45px;
+
+}
+
+.header__title span {
+   font-size: 65px;
+   position: relative;
+   left: 193px;
+}
+
+.header__text {
+   font-size: 18px;
+   line-height: 29px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   
+}
+
+.header__text p+p {
+   margin-left: 30px;
+}
+
+.header__btn {
+   font-size: 24px;
+   line-height: 29px;
+   text-transform: uppercase;
+   text-align: center;
+   width: 100%;
+   border: 1px solid #fff;
+   padding: 15px 10px 16px;
+}
+
+.slider__item {
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.slider .slick-dots button {
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   background-color: #0b0b0b;
+   border: none;
+   padding: 0;
+   font-size: 0;
+   cursor: pointer;
+   outline: none;
+}
+
+.slider .slick-dots .slick-active button {
+   background-color: #fff;
+}
+
+.slider .slick-dots li {
+   display: inline-block;
+   margin: 0 5px;
+}
+
+.slider .slick-dots {
+   position: relative;
+   z-index: 2;
+   max-width: 1200px;
+   margin: -55px auto 0; /*top edges bottom*/
+}
+
+.my-trainings {
+   padding: 150px 0;
+   color: #0b0b0b;
+}
+
+.title {
+   text-transform: uppercase;
+   padding-bottom: 4rem;
+   font-size: 36px;
+}
+
+.my-trainings__list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 40px 58px;
+   list-style-type: none;
+}
+
+.my-trainings__item {
+   flex-basis: 542px;
+   display: flex;
+   gap: 0 20px;
+}
+
+.my-trainings__item-img {
+   height: 180px;
+}
+
+.my-trainings__item-content {
+   display: flex;
+   flex-direction: column;
+}
+
+.my-trainings__item-title {
+   font-size: 24px;
+   line-height: 30px;
+   font-weight: 400;
+   margin-bottom: 10px;
+   min-height: 86px;
+}
+
+.my-trainings__item-date {
+   font-size: 13px;
+}
+
+.my-trainings__item-link {
+   font-size: 13px; 
+   margin-top: auto;
+   position: relative;
+   transition: color .5s;
+}
+
+.my-trainings__item-link::after {
+   content: "";
+   background-image: url(../images/arrow.svg);
+   width: 5px;
+   height: 10px;
+   margin-left: 8px;
+   position: absolute;
+   bottom: 2px;
+
+}
+
+.my-trainings__item-link:hover {
+   color: #d39553;
+}
+
+.my-trainings__link {
+   font-size: 25px;
+   padding: 12px 41px;
+   display: flex;
+   justify-content: center;
+   margin: 72px auto 0;
+   border: 1px solid #0b0b0b;
+   width: 195px;
+   text-transform: uppercase;
+   transition: background-color .5s;
+}
+
+.my-trainings__link:hover {
+   background-color: #875027;
+   color: white;
+}
+
+.my-goals {
+   color: #fff;
+   padding: 100px 0;
+   background-image: url(../images/cycling9.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.my-goals__link {
+   font-size: 25px;
+   padding: 12px 41px;
+   display: flex;
+   border: 1px solid #ffffff;
+   width: 254px;
+   text-transform: uppercase;
+   justify-content: center;
+   transition: background-color .5s;
+ }
+
+ .my-goals__link:hover {
+   background-color: #CB0E0E;
+ }
+
+.my-goals__content {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 150px;
+   padding: 40px 10px;
+}
+
+.my-goals__title {
+   text-transform: uppercase;
+   padding-bottom: 4rem;
+   font-size: 36px;
+   margin-bottom: 50px;
+}
+
+.my-goals__table-block {
+   padding: 15px;
+   background: rgb(0, 0, 0, 0.8);
+}
+
+.my-goals__table {
+   color: #fff;
+}
+
+.my-goals__table-tr {
+   font-size: 46px;
+   line-height: 50px;
+
+}
+
+.my-goals__table-td {
+   padding: 10px 30px 10px 0; /*t b r l*/
+}
+
+
