@@ -24,33 +24,33 @@ button {
    color: inherit;
 }
 
- .container {
+ ._container {
    max-width: 1220px;
    padding: 0 10px;
    margin: 0 auto;
  }
-
+ 
  .header {
     min-height: 100vh;
-    position: absolute;
     background: rgb(0, 0, 0, 0.3);
     min-height: 100vh;
-    z-index: 3;
-    left: 0; /*to stretch*/
-    right: 0;
- }
+    background-image: url(https://i.ibb.co/0Y9LhTh/bycicle-beach.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
 
  .header__top {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
    padding: 75px 0 30px;
    margin-bottom: 155px;
-   
 }
 
 .nav__list {
    display: flex;
+   justify-content: center;
 }
 
 .nav__item {
@@ -68,104 +68,40 @@ button {
    color: #CB0E0E;
 }
 
-.login {
-   margin-left: 22px;
-   margin-right: 124px;
+.hero-section {
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+
 }
 
-.login__btn {
-      width: 60px;
-      height: 30px;
-      border: 1px solid #fff;
-      background: rgb(0, 0, 0, 0.1);
-      cursor: pointer;
-      font-size: 1rem;
-      text-transform: uppercase;
-      text-align: center;
-      width: 100%;
-      transition: color .5s;
-}
-
-.login__btn:hover {
-   background-color: #CB0E0E;
-   color: #fff;
-}
-
-.header__content {
+.text-wrapper {
    max-width: 600px;
-   
 }
 
-.header__title {
+.hero-section__title {
    font-size: 110px;
    line-height: 70px;
    font-weight: 400;
-   margin-bottom: 45px;
-
+   
 }
 
-.header__title span {
+.hero-section__title--top {
    font-size: 65px;
    position: relative;
    left: 193px;
 }
 
-.header__text {
+.hero-section__subtitle-wrapper {
    font-size: 18px;
    line-height: 29px;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   
 }
 
-.header__text p+p {
+.hero-section__subtitle-wrapper p+p {
    margin-left: 30px;
-}
-
-.header__btn {
-   font-size: 24px;
-   line-height: 29px;
-   text-transform: uppercase;
-   text-align: center;
-   width: 100%;
-   border: 1px solid #fff;
-   padding: 15px 10px 16px;
-}
-
-.slider__item {
-   height: 100vh;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-}
-
-.slider .slick-dots button {
-   width: 15px;
-   height: 15px;
-   border-radius: 50%;
-   background-color: #0b0b0b;
-   border: none;
-   padding: 0;
-   font-size: 0;
-   cursor: pointer;
-   outline: none;
-}
-
-.slider .slick-dots .slick-active button {
-   background-color: #fff;
-}
-
-.slider .slick-dots li {
-   display: inline-block;
-   margin: 0 5px;
-}
-
-.slider .slick-dots {
-   position: relative;
-   z-index: 2;
-   max-width: 1200px;
-   margin: -55px auto 0; /*top edges bottom*/
 }
 
 .my-trainings {
@@ -190,6 +126,8 @@ button {
    flex-basis: 542px;
    display: flex;
    gap: 0 20px;
+   width: 270px;
+   height: 180px;
 }
 
 .my-trainings__item-img {
@@ -255,7 +193,7 @@ button {
 .my-goals {
    color: #fff;
    padding: 100px 0;
-   background-image: url(../images/cycling9.jpg);
+   background-image: url(https://i.ibb.co/FqLpRw0/cycling9.jpg);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
