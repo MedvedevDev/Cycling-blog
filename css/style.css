@@ -44,8 +44,7 @@ button {
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 75px 0 30px;
-   margin-bottom: 155px;
+   height: 6rem;
 }
 
 .nav__list {
@@ -71,25 +70,27 @@ button {
 .hero-section {
    display: flex;
    flex-direction: column;
-   gap: 50px;
-
+   justify-content: center;
+   gap: 3rem;
+   width: fit-content;
+   height: 60vh;
 }
 
 .text-wrapper {
-   max-width: 600px;
+   display: flex;
+   flex-direction: column;
 }
 
 .hero-section__title {
-   font-size: 110px;
+   font-size: 120px;
    line-height: 70px;
    font-weight: 400;
-   
+   width: fit-content;
 }
 
 .hero-section__title--top {
-   font-size: 65px;
-   position: relative;
-   left: 193px;
+   font-size: 75px;
+   align-self: flex-end;
 }
 
 .hero-section__subtitle-wrapper {
