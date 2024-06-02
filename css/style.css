@@ -34,14 +34,13 @@ button {
     min-height: 100vh;
     background: rgb(0, 0, 0, 0.3);
     min-height: 100vh;
-    background-image: url(https://i.ibb.co/0Y9LhTh/bycicle-beach.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.ibb.co/0Y9LhTh/bycicle-beach.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
    }
 
-   
+
 
  .header__top {
    display: flex;
