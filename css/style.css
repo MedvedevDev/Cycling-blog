@@ -38,9 +38,8 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-   }
-
-
+    object-fit: cover;
+}
 
  .header__top {
    display: flex;
@@ -55,7 +54,7 @@ button {
 }
 
 .nav__item {
-   margin-right: 2rem;
+   margin-right: 3rem;
 }
 
 .nav__link {
@@ -108,8 +107,10 @@ button {
 }
 
 .my-trainings {
-   padding: 9rem 0;
+   height: 56rem;
    color: #0b0b0b;
+   display: flex;
+   align-items: center; /* Aligns all flex items to the center vertically */
 }
 
 .title {
@@ -126,15 +127,10 @@ button {
 }
 
 .my-trainings__item {
-   flex-basis: 34rem;
    display: flex;
    gap: 0 1.2rem;
-   width: 17rem;
-   height: 12rem;
-}
-
-.my-trainings__item-img {
-   height: 12rem;
+   width: 34rem;
+   height: 11rem;
 }
 
 .my-trainings__item-content {
