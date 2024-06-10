@@ -38,7 +38,6 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit: cover;
 }
 
  .header__top {
@@ -51,6 +50,40 @@ button {
 .nav__list {
    display: flex;
    justify-content: center;
+   position: relative;
+   z-index: 3;
+}
+
+.nav__background {
+   display: none;
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 1;
+   transition: background-color .3s;
+}
+
+.nav__background.nav__background-active {
+   display: block;
+}
+
+.nav__btn {
+   display: none;
+   width: 2.5rem;
+   height: 1.3rem;
+   flex-direction: column;
+   justify-content: space-between;
+   position: relative;
+   z-index: 2;
+}
+
+.nav__btn span {
+   background-color: #fff;
+   height: 0.1rem;
+   width: 100%;
 }
 
 .nav__item {
