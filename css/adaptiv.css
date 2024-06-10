@@ -36,12 +36,18 @@
         display: flex;
         
     }
-    
     .nav__item {
         margin-right: 0;
     }
     .nav__link {
         font-size: 0.8rem;
+    }
+    .header__top {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .header {
+        width: 100%;
     }
 }
 
