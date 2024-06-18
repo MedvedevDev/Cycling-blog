@@ -126,6 +126,7 @@ button {
     display: flex;
     justify-content: space-between;
     width: 600px;
+    line-height: 1.5;
   }
 
   .top_row {
